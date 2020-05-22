@@ -1,0 +1,23 @@
+{
+  "name": "GD9-BrowerTests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JorgeLeonS/GD9-BrowerTests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JorgeLeonS/GD9-BrowerTests/issues"
+  },
+  "homepage": "https://github.com/JorgeLeonS/GD9-BrowerTests#readme",
+  "dependencies": {
+    "cypress": "^4.6.0"
+  }
+}
