@@ -1,6 +1,6 @@
 describe('https://www.nafin.com/portalnf/content/herramientas-de-negocio/simulador-de-creditos/simulador-de-creditos.do', () => {
-    describe('Fill Form', () => {
-        it('Should fill "Fecha de disposicion"', () => {
+    describe('Fill Form and load 24 rows', () => {
+        it('Should fill form and load cotización table', () => {
             cy.visit('https://www.nafin.com/portalnf/content/herramientas-de-negocio/simulador-de-creditos/simulador-de-creditos.do');
             cy.get('#dispDate').clear().type('05/05/2020 {enter}');
             cy.get('#creditAmount').clear().type(20000);
@@ -10,7 +10,7 @@ describe('https://www.nafin.com/portalnf/content/herramientas-de-negocio/simulad
             cy.contains('Calcular').click();
             cy.contains('Ahora no').click();
             //Table
-            cy.get('#resultadosSimulador').find('tr').its('length').should('eq',25);
+            cy.get('#resultadosSimulador').find('tbody').find('tr').its('length').should('eq',24);
         })
     })
 
